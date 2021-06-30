@@ -4,7 +4,8 @@
 #include<ctype.h>
 
 string ari(string s)
-{ int word=0,characters=0,sen=0,r,i=0;
+{ float word=0,characters=0,sen=0;
+  int r,i=0;
   float readindex;
   
   while(s[i]!='\0')
@@ -18,7 +19,7 @@ string ari(string s)
 	 continue;
     i++;
   }
-  readindex=(4.71*(float)(characters/word))+(0.5*(float)(word/sen))-21.43;
+  readindex=4.71*(characters/word)+0.5*(word/sen)-21.43;
   r=ceil(readindex);
   switch(r)
  {case 1:
