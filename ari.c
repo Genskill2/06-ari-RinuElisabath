@@ -10,7 +10,7 @@ string ari(string s)
   while(s[i]!='\0')
   { if(isalnum(s[i]))
  	characters++;
-    else if(s[i]==" ")
+    else if(s[i]==' ')
     	word++;
     else if(s[i]=='.' || s[i]=='?' || s[i]=='!')
   	sen++;
