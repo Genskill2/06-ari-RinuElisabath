@@ -1,12 +1,13 @@
 #include<stdio.h>
+#include<cs50.h>
 #include<math.h>
 #include<ctype.h>
-string ari(string s)
 
+string ari(string s)
 { int word=0,characters=0,sen=0,r,i=0;
   float index;
   
- while(s[i]!="\0")
+  while(s[i]!="\0")
   { if(isalnum(s[i]))
  	characters++;
     if(s[i]==" ")
