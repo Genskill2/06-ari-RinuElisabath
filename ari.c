@@ -18,7 +18,7 @@ string ari(string s)
   	sen++;
     else
 	 continue;
-    i++;
+    
   }
   readindex=4.71*(characters/word)+0.5*(word/sen)-21.43;
   r=ceil(readindex);
