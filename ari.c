@@ -7,7 +7,7 @@ string ari(string s)
   float index;
   
  while(s[i]!="\0")
-  { if(isalnum(s[i])!=0)
+  { if(isalnum(s[i]))
  	characters++;
     if(s[i]==" ")
     	word++;
@@ -15,7 +15,7 @@ string ari(string s)
   	sen++;
     i++;
   }
-  index=(4.71*(characters/word))+(0.5*(word/sen))-21.43;
+  index=(4.71*(float)(characters/word))+(0.5*(float)(word/sen))-21.43;
   r=ceil(index);
   switch(r)
  {case 1:
