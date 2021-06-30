@@ -1,10 +1,9 @@
 #include<stdio.h>
-#include<cs50.h>
 #include<math.h>
 #include<ctype.h>
 string ari(string *s)
 
-{ int word=0,characters=0,sen=0,r;
+{ int word=0,characters=0,sen=0,r,i=0;
   float index;
   
  while(s[i]!="\0")
@@ -14,6 +13,7 @@ string ari(string *s)
     	word++;
     if(s[i]=='.' || s[i]=='?' || s[i]=='!')
   	sen++;
+    i++;
   }
   index=(4.71*(characters/word))+(0.5*(word/sen))-21.43;
   r=ceil(index);
