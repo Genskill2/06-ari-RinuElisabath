@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<ctype.h>
-string ari(string *s)
+string ari(string s)
 
 { int word=0,characters=0,sen=0,r,i=0;
   float index;
@@ -52,7 +52,7 @@ string ari(string *s)
 	return "Eleventh Grade";
 	break;
   case 12:
-	return "Twelfth grade";
+	return "Twelfth Grade";
 	break;
   case 13:
 	return "College student";
