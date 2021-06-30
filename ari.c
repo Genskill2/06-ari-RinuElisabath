@@ -7,13 +7,15 @@ string ari(string s)
 { int word=0,characters=0,sen=0,r,i=0;
   float index;
   
-  while(s[i]!="\0")
+  while(s[i]!='\0')
   { if(isalnum(s[i]))
  	characters++;
-    if(s[i]==" ")
+    else if(s[i]==" ")
     	word++;
-    if(s[i]=='.' || s[i]=='?' || s[i]=='!')
+    else if(s[i]=='.' || s[i]=='?' || s[i]=='!')
   	sen++;
+    else
+	 continue;
     i++;
   }
   index=(4.71*(float)(characters/word))+(0.5*(float)(word/sen))-21.43;
